@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renjana Aksara - Toko Buku</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #3a6ea5;
+        color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      header h1 {
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #f0f0f0;
+        color: #3a6ea5;
+        border-radius: 4px;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        flex: 1 0 auto;
+      }
+
+      .hero {
+        background-color: #c0d9e7;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .hero h2 {
+        color: #3a6ea5;
+        margin-bottom: 1rem;
+      }
+
+      .featured {
+        margin-bottom: 3rem;
+      }
+
+      .featured h2 {
+        color: #3a6ea5;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        border-bottom: 2px solid #c0d9e7;
+        padding-bottom: 0.5rem;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        padding: 1rem 1rem 0.5rem;
+        color: #3a6ea5;
+      }
+
+      .card p {
+        padding: 0 1rem 1rem;
+        color: #666;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #3a6ea5;
+        color: white;
+        height: 60px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 992px) {
+        .card-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+
+        .card-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+              src="toko buku online.jpg"
+        <h1>Renjana Aksara</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="buku.html">Buku</a></li>
+          <li><a href="koran.html">Koran</a></li>
+          <li><a href="majalah.html">Majalah</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Selamat Datang di Toko Buku Renjana Aksara</h2>
+        <p>Temukan berbagai koleksi buku, koran, dan majalah pilihan.</p>
+      </section>
+
+      <section class="featured">
+        <h2>Koleksi Unggulan</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="filosofi teras.jpg"
+              alt="Filosofi Teras"
+            />
+            <h3>Filosofi Teras</h3>
+            <p>Rp 85.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="laut bercerita.jpg"
+              alt="Laut Bercerita"
+            />
+            <h3>Laut Bercerita</h3>
+            <p>Rp 90.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="negeri 5 menara.jpg"
+              alt="Negeri 5 Menara"
+            />
+            <h3>Negeri 5 Menara</h3>
+            <p>Rp 88.000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h2>Koran Terpopuler</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="koran tempo.jpg"
+              alt="Koran Tempo"
+            />
+            <h3>Koran Tempo</h3>
+            <p>Rp 15.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="koran tribun timur.jpg"
+              alt="Koran Tribun Timur"
+            />
+            <h3>Koran Tribun Timur</h3>
+            <p>Rp 10.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="koran malang post.jpg"
+              alt="Koran Malang Post"
+            />
+            <h3>Koran Malang Post</h3>
+            <p>Rp 12.000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h2>Majalah Favorit</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="majalah bobo.jpg"
+              alt="Majalah Bobo"
+            />
+            <h3>Majalah Bobo</h3>
+            <p>Rp 25.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="majalah dora.jpg"
+              alt="Majalah Dora"
+            />
+            <h3>Majalah Dora</h3>
+            <p>Rp 20.000</p>
+          </div>
+          <div class="card">
+            <img
+              src="majalah power.jpg"
+              alt="Majalah Power Puff Girl"
+            />
+            <h3>Majalah Power Puff Girl</h3>
+            <p>Rp 22.000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Toko Buku Renjana Aksara. Hak Cipta Dilindungi.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.navbar 
+{
+       background: blue; 
+       margin:0; 
+       padding:30px; 
+}
+.continer 
+{
+      display: flax;  
+      justify-content:space-between: 
+      align-items:center: 
+}	  
+.menu 
+{ 
+      margin:0; 
+      display: flex; 
+      list-style:none; 
+      padding:0;
+}
+.menu-li
+{
+      padding-left: 0;
+      margin-right: 10px;
+}
+.menu li a {
+    padding: 10px;
+    color: aliceblue;
+    text-decoration:none ;
+    display: inline-block;
+}
