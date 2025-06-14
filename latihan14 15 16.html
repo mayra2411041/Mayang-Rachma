@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML DIV & CLASS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .layout {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 250px;
+      box-sizing: border-box;
+      height: 300px;
+    }
+
+    .layout-30 .header {
+      background: #d0d0d0;
+      padding: 10px;
+      text-align: center;
+      height: 60px;
+    }
+
+    .layout-30 .main {
+      display: flex;
+      height: calc(100% - 60px);
+    }
+
+    .layout-30 .menu {
+      background: #a0e0f0;
+      width: 40%;
+      padding: 10px;
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+    .layout-30 .content {
+      background: #f8e490;
+      width: 60%;
+      padding: 10px;
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+    .layout-31 .header {
+      background: #c0e4b0;
+      padding: 10px;
+      text-align: center;
+      height: 60px;
+    }
+
+    .layout-31 .menu {
+      background: #a0d090;
+      padding: 10px;
+      text-align: center;
+      height: 60px;
+    }
+
+    .layout-31 .content {
+      background: #90c070;
+      padding: 10px;
+      text-align: center;
+      height: 120px;
+    }
+
+    .layout-31 .footer {
+      background: #78a050;
+      padding: 10px;
+      text-align: center;
+      height: 60px;
+    }
+
+    .layout-32 {
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      height: 300px;
+    }
+
+    .layout-32 .box {
+      flex: 1;
+      padding: 20px;
+      background: #ffccbc;
+      text-align: center;
+      border: 1px solid #fff;
+      margin: 0 5px;
+    }
+
+    .layout-32 .box:nth-child(2) { background: #ffab91; }
+    .layout-32 .box:nth-child(3) { background: #ff8a65; }
+  </style>
+</head>
+<body>
+
+  <div class="layout layout-30">
+    <div class="header">Header</div>
+    <div class="main">
+      <div class="menu">Menu</div>
+      <div class="content">Content</div>
+    </div>
+  </div>
+
+  <div class="layout layout-31">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+
+  <div class="layout-32">
+    <div class="box">Content 1</div>
+    <div class="box">Content 2</div>
+    <div class="box">Content 3</div>
+  </div>
+
+</body>
+</html>
